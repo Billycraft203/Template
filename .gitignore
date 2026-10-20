@@ -1,0 +1,34 @@
+# ---- Keil / MDK 编译产物（构建输出与列表目录不纳入版本控制）----
+OBJ/
+Listings/
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.lst
+*.axf
+*.hex
+*.map
+*.plg
+*.bak
+*.__i
+*.build_log.htm
+
+# ---- Keil 本地状态（Keil 会自动改写，与代码无关，不能进版本库）----
+*.uvoptx
+*.uvguix.*
+*.scvd
+JLinkLog.txt
+JLinkSettings.ini
+
+# ---- 编辑器与系统杂物 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 临时归档（模板不需要把自身打包进仓库）----
+*.rar
+*.zip
+*.7z

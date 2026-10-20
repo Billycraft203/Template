@@ -1,0 +1,19 @@
+# 统一换行符，避免出现"只改一行、diff 却整个文件"的情况
+* text=auto
+
+*.c        text eol=crlf
+*.h        text eol=crlf
+*.s        text eol=crlf
+*.uvprojx  text eol=crlf
+*.uvoptx   text eol=crlf
+*.md       text eol=lf
+
+# 二进制文件不做换行处理
+*.hex   -text
+*.bin   -text
+*.axf   binary
+*.o     binary
+*.pdf   binary
+*.xlsx  binary
+*.png   binary
+*.jpg   binary
