@@ -23,7 +23,9 @@ JLinkLog.txt
 JLinkSettings.ini
 
 # ---- 编辑器与系统杂物 ----
-.vscode/
+# .vscode 里只保留 IntelliSense 配置（模板克隆后即可用），其余本地文件仍忽略
+.vscode/*
+!.vscode/c_cpp_properties.json
 .idea/
 .DS_Store
 Thumbs.db
