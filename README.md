@@ -58,7 +58,7 @@
 1. **克隆到本地**
 
    ```bash
-   git clone https://github.com/Billycraft203/stm32f103-keil-template.git
+   git clone https://github.com/Billycraft203/Template.git
    ```
 
    也可以直接在 GitHub 页面点 **Use this template**（若已开启 Template repository），或下载 ZIP。
@@ -172,7 +172,7 @@ Template/
 ### 每次练习：克隆到新目录
 
 ```bash
-git clone https://github.com/Billycraft203/stm32f103-keil-template.git practice-01-blink
+git clone https://github.com/Billycraft203/Template.git practice-01-blink
 cd practice-01-blink
 git remote remove origin    # 断开与原模板仓库的联系，避免误 push
 ```
@@ -184,7 +184,7 @@ git remote remove origin    # 断开与原模板仓库的联系，避免误 push
 把本仓库在 GitHub 上勾选 **Template repository**，之后：
 
 ```bash
-gh repo create <项目名> --template Billycraft203/stm32f103-keil-template --private --clone
+gh repo create <项目名> --template Billycraft203/Template --private --clone
 ```
 
 它会建好带独立历史与远程的新仓库，不需要再 `git init`。
@@ -192,7 +192,7 @@ gh repo create <项目名> --template Billycraft203/stm32f103-keil-template --pr
 ### 模板有改进时，同步给已有练习
 
 ```bash
-git -C <练习目录> pull https://github.com/Billycraft203/stm32f103-keil-template.git main
+git -C <练习目录> pull https://github.com/Billycraft203/Template.git main
 ```
 
 ### 维护约定
