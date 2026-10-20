@@ -4,6 +4,7 @@
     {
       "name": "STM32F103ZE（Keil 工程，仅用于编辑器解析）",
       "includePath": [
+        "C:/Keil_v5/ARM/ARMCC/include",
         "${workspaceFolder}/USER",
         "${workspaceFolder}/CMSIS",
         "${workspaceFolder}/FWLlib/inc",
@@ -13,6 +14,7 @@
         "STM32F10X_HD",
         "USE_STDPERIPH_DRIVER"
       ],
+
       "cStandard": "c99",
       "browse": {
         "path": [
