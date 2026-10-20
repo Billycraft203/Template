@@ -2,14 +2,20 @@
   "version": 4,
   "configurations": [
     {
-      "name": "STM32F103ZE（Keil 工程，仅用于编辑器解析）",
+      "name": "STM32F103ZE（Keil ARMCC5 工程，供 IntelliSense 解析）",
       "includePath": [
-        "C:/Keil_v5/ARM/ARMCC/include",
         "${workspaceFolder}/USER",
         "${workspaceFolder}/CMSIS",
         "${workspaceFolder}/FWLlib/inc",
-        "${workspaceFolder}/BSP"
+        "${workspaceFolder}/BSP",
+        "C:/Keil_v5/ARM/ARMCLANG/include"
       ],
+      "compilerPath": "C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
+      "compilerArgs": [
+        "--target=arm-arm-none-eabi",
+        "-mcpu=cortex-m3"
+      ],
+      "intelliSenseMode": "windows-clang-arm",
       "defines": [
         "STM32F10X_HD",
         "USE_STDPERIPH_DRIVER"
@@ -20,7 +26,7 @@
         "path": [
           "${workspaceFolder}/USER",
           "${workspaceFolder}/CMSIS",
-          "${workspaceFolder}/FWLlib",
+          "${workspaceFolder}/FWLlib/inc",
           "${workspaceFolder}/BSP"
         ],
         "limitSymbolsToIncludedHeaders": true
