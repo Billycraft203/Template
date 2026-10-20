@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS;..\FWLlib\inc;..\USER</IncludePath>
+              <IncludePath>..\CMSIS;..\FWLlib\inc;..\USER;..\BSP</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
