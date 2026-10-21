@@ -1,0 +1,77 @@
+---
+# 语言与基础风格
+Language: C
+BasedOnStyle: LLVM
+
+# 缩进
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+IndentCaseLabels: true
+IndentWrappedFunctionNames: false
+NamespaceIndentation: None
+
+# 大括号：全部独占一行（Allman 风格）
+BreakBeforeBraces: Allman
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: Always
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+
+# 指针与引用：星号靠右，如 int *p
+DerivePointerAlignment: false
+PointerAlignment: Right
+ReferenceAlignment: Right
+
+# 空格
+SpaceBeforeParens: ControlStatements   # if/for/while/switch 后加空格，函数调用不加
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpacesInAngles: Never
+SpacesInContainerLiterals: false
+SpacesInParens: Never
+SpacesInSquareBrackets: false
+SpacesBeforeTrailingComments: 1
+
+# 换行与行宽
+ColumnLimit: 100
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: false
+BreakBeforeTernaryOperators: true
+BreakStringLiterals: true
+BinPackArguments: false
+BinPackParameters: OnePerLine
+
+# 对齐
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments:
+  Kind: Always
+
+# 预处理与头文件
+SortIncludes:
+  Enabled: false                        # 禁止自动排序 #include，嵌入式按依赖顺序手动排
+
+# 其他
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+ReflowComments: Always
+SortUsingDeclarations: Never
