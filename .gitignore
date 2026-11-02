@@ -1,5 +1,6 @@
 # ---- Keil / MDK 编译产物（构建输出与列表目录不纳入版本控制）----
-OBJ/
+OBJ/*
+!OBJ/.gitkeep
 Listings/
 *.o
 *.d
