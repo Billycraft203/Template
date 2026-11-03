@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS;..\FWLlib\inc;..\USER;..\UTILS;..\BSP</IncludePath>
+              <IncludePath>..\CMSIS;..\FWLlib\inc;..\USER;..\UTILS;..\APP;..\BSP</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -416,7 +416,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FWLib</GroupName>
+          <GroupName>FWLlib</GroupName>
           <Files>
             <File>
               <FileName>misc.c</FileName>
@@ -540,6 +540,12 @@
         </Group>
         <Group>
           <GroupName>OBJ</GroupName>
+        </Group>
+        <Group>
+          <GroupName>APP</GroupName>
+        </Group>
+        <Group>
+          <GroupName>UTILS</GroupName>
         </Group>
       </Groups>
     </Target>

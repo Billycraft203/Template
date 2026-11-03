@@ -9,6 +9,7 @@
         "${workspaceFolder}/FWLlib/inc",
         "${workspaceFolder}/BSP",
         "${workspaceFolder}/UTILS",
+        "${workspaceFolder}/APP",
         "C:/Keil_v5/ARM/ARMCLANG/include"
       ],
       "compilerPath": "C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
@@ -29,6 +30,7 @@
           "${workspaceFolder}/CMSIS",
           "${workspaceFolder}/FWLlib/inc",
           "${workspaceFolder}/UTILS",
+          "${workspaceFolder}/APP",
           "${workspaceFolder}/BSP"
         ],
         "limitSymbolsToIncludedHeaders": true
